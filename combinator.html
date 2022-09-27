@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         p{
+        /*Descendent selector*/
+       div  p{
             color: rgb(255, 159, 127);
         }
+        /*child selector*/
         div>p{
             color: green;
         }
+        /*Adjacent*/
+        div + p{
+            color: aqua;
+        }
+        /*gendral sibling */
+        div ~p{
+            color: rgb(148, 29, 223);
+        }
  </style>
+
+
 
 </head>
 <body>
@@ -22,8 +34,8 @@
         </span>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eligendi eos velit autem unde impedit recusandae, maiores cum vel exercitationem? Itaque dignissimos nulla illo quam autem eveniet provident, blanditiis natus.</p>
 </div>
-
-
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quos amet quaerat maiores, aut doloribus eos, fugit nemo aspernatur pariatur dolorum laborum atque sit. Inventore ipsum at porro perspiciatis maiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque quasi odio nisi corrupti vitae atque pariatur consectetur voluptatem. Eius facilis vitae veritatis eveniet dolores a atque fuga provident magni?</p>
 
     
 </body>
