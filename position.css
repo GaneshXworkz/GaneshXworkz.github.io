@@ -9,5 +9,19 @@
 }
 .relative{
     position: relative;
+    left: 100;
     top:0;
+}
+.absolute{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.absolutegani{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.imageprent{
+    position: relative;
 }
