@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script>
+        console.log("introduction of javaScript");
+        //how to create a variable 
+        //var keyword variable name;
+        //console.log is used for print the statement
+        //console is an object reference
+        //lod is a function
+        var a;//declearation
+        console.log(a)
+
+        a=10;//initilzation
+        console.log(a)
+        console.log(typeof(a))//datetype-number
+
+        a="javascript"
+        console.log(a)
+        console.log(typeof(a))//datetype-string
+
+        a=true
+        console.log(a)
+        console.log(typeof(a))//datatype-boolean
+
+        //function
+        //how to declare a function
+        //function used to perform task
+        //function functionname(){
+
+       // }
+
+       function display(){
+        console.log("we are learning function in javascript")
+
+       }
+       display()
+
+       function add( a, b){
+        console.log(a+b)
+       }
+       add(10,20)
+
+       function callFromclickButton(){
+        console.log("we are calling from callFromclick")
+       }
+
+    </script>
+    
+</head>
+<body>
+
+    <button onclick="callFromclickButton()">click me</button>
+    <button onclick="callFromclickButton()">Mouse over</button>
+     
+</body>
+</html>
