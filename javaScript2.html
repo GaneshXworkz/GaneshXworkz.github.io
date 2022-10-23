@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script>
+        function valiadate(){
+            console.log("calling validation function")
+            var userName=document.getElementById("userName")
+            console.log(userName.value)
+            console.log(userName.value.length)
+            if(userName.value==''){
+            console.log("please Enter username")
+            var errorUserName= document.getElementById("errorUsername")
+            errorUserName.innerHTML ="please Enter userName"
+            errorUserName.style.color= "red"
+
+         }
+            var email= document.getElementById("email")
+            console.log(email.value)
+            if(email.value =='') {
+            console.log("Please enter email")
+            var errorEmail= document.getElementById("errorEmail")
+            errorEmail.innerHTML ="please Enter Email"
+            errorEmail.style.color= "red"
+
+             }
+        
+          var gender=document.formRegister.gender
+          console.log(gender)
+          
+          console.log(gender[0])
+          console.log(gender[1])
+          console.log(gender[2])
+          console.log(gender[0].checked)
+          console.log(gender[1].checked)
+          console.log(gender[2].checked)
+
+          if(gender[0].checked==false && gender[1].checked==false && gender[2].checked==false){
+            console.log("please select gender")
+          }
+
+          var city = document.formRegister.city
+          console.log(city)
+          if(city.value == "0"){
+            console.log("Please Enter City")
+          }
+        
+         
+
+
+        
+
+    }
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <form name="formRegister">
+        <div><label>Enter UserName</label>
+            <input type="text" name="userName" id="userName">
+            <span id="errorUsername"></span>
+    </div>
+    <div>
+        <lable>Enter email</lable>
+        <input type="email" name="email" id="email">
+        <span id="errorEmail"></span>
+    </div>
+
+    <div>  <lable>select Gender</lable>
+        <input type="radio" name="gender" >male
+        <input type="radio"name="gender" >female
+        <input type="radio" name="gender" >others </div>
+
+
+        <div>   <label>select city</label>
+            <select name="city">
+                <option value="0">--selact city--</option>
+                <option>Banglore</option>
+                <option>mysore</option>
+                <option>bellary</option>
+                <option>Haveri</option>
+                <option>Davanagaear</option>
+            </select>  </div>
+
+
+
+       <button type="button" onclick=" valiadate()">Rejister</button>
+        <button type="reset">Reset</button>
+
+        
+
+
+
+
+
+
+
+    </form>
+
+    
+    
+</body>
+</html>
